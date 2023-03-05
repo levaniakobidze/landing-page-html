@@ -450,7 +450,7 @@ body {
     margin-right: 10px;
   }
 }
-@media all and (max-width: 1440px) {
+@media all and (min-width: 1440px) {
   .left-menu h1 {
     margin-top: 20px;
     font-size: 70px;
