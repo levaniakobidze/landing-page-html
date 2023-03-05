@@ -464,3 +464,8 @@ body {
     margin-top: 15px;
   }
 }
+@media all and (min-width: 1920px) {
+  .left-menu h1 {
+    margin-top: 60px;
+  }
+}
