@@ -100,7 +100,6 @@
 
 .chat-container {
   width: 80%;
-  min-width: 500px;
   min-height: 100vh;
   /* margin-top: 50px; */
   background-image: url("./assets/bg-white-desktop.png");
@@ -111,6 +110,7 @@
   align-items: center;
   padding: 30px;
   margin-left: 20px;
+  margin-top: 50px;
 }
 .chat {
   width: 100%;
@@ -229,15 +229,77 @@
   margin-top: 39px;
   margin-bottom: 30px;
 }
-
+.gift-card {
+  width: 379px;
+  background-color: #e2ece9;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 27px;
+  border-radius: 20px;
+}
+.gift-card img {
+  border-radius: 19px;
+}
+.gift-card h3 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 17px;
+}
+.card-text {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #484848;
+  margin-top: 24px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+.btns button {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #484848;
+}
+.btns p span {
+  color: #5c5c5c;
+  font-weight: 700;
+}
 @media all and (max-width: 986px) {
   .left-menu {
     display: none;
   }
   .chat-container {
     width: 100%;
-    margin: 0;
+    margin: 0 !important;
   }
+}
+.gift-card button {
+  margin-left: 20px;
+  width: 112.61px;
+  height: 34px;
+  background-color: #fad2e1;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
 }
 @media all and (max-width: 1536px) {
   .left-menu {
@@ -290,5 +352,47 @@
   }
   .icon-cont img {
     height: 20px;
+  }
+}
+
+@media all and (max-width: 1366px) {
+  .left-menu {
+    width: 450px;
+  }
+  .chat-container {
+    height: 100vh;
+  }
+  .chat-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+  }
+  .chat-header img {
+    width: 100px;
+  }
+  .left-menu h1 {
+    font-size: 85px;
+    line-height: 1;
+    margin-top: 10px;
+  }
+  .menu-list {
+    margin-top: 5px;
+  }
+  .left-menu p {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  .chat-container {
+    margin-top: 50px;
+  }
+  .header {
+    font-size: 17px;
+  }
+}
+
+@media all and (max-width: 572px) {
+  .gift-card {
+    width: 90%;
   }
 }
