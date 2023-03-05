@@ -3,18 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
 .chat-wrapper {
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
+
   display: flex;
   justify-content: space-between;
   background: linear-gradient(
-      152.36deg,
-      #fff1e6 0.79%,
-      #fde2e4 97.68%,
-      #fff1e6 97.68%
-    ),
-    url(ასდასდ.jpg), #003f58;
+    152.36deg,
+    #fff1e6 0.79%,
+    #fde2e4 97.68%,
+    #fff1e6 97.68%
+  );
 }
 .left-menu {
   width: 550px;
@@ -30,7 +34,7 @@
   line-height: 127px;
   /* identical to box height */
   color: #fd6f34;
-  margin-left: 20px;
+  margin-left: 54px;
   margin-top: 61px;
 }
 .left-menu p {
@@ -41,14 +45,14 @@
   line-height: 48px;
   text-transform: capitalize;
   color: #474747;
-  margin-left: 20px;
+  margin-left: 54px;
 }
 .header {
   width: 90%;
   border-radius: 0 49px 49px 0;
   background: #f1f8f6;
   box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.1);
-  padding: 25px 20px;
+  padding: 25px 54px;
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
@@ -60,8 +64,8 @@
   margin-bottom: 40px;
 }
 .menu-list {
-  width: 416px;
-  margin-left: 20px;
+  width: 80% !important;
+  margin-left: 54px !important;
   justify-content: center;
 }
 .menu-list li {
@@ -116,7 +120,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 850px;
+  height: 100%;
   overflow-y: scroll;
 }
 .chat::-webkit-scrollbar {
@@ -160,6 +164,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+  margin-bottom: 30px;
 }
 .input-cont input {
   flex: 1;
@@ -230,6 +235,9 @@
   margin-bottom: 30px;
 }
 .gift-card {
+  display: flex;
+}
+.gift {
   width: 379px;
   background-color: #e2ece9;
   display: flex;
@@ -237,11 +245,12 @@
   padding: 20px 27px;
   border-radius: 20px;
   margin-top: 10px;
+  margin-left: 40px;
 }
-.gift-card img {
+.gift img {
   border-radius: 19px;
 }
-.gift-card h3 {
+.gift h3 {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 900;
@@ -319,7 +328,7 @@
     margin: 0 !important;
   }
 }
-.gift-card button {
+.gift button {
   margin-left: 20px;
   width: 112.61px;
   height: 34px;
@@ -349,8 +358,6 @@
     line-height: 137px;
     /* identical to box height */
     color: #fd6f34;
-    margin-left: 20px;
-    margin-top: 41px;
   }
   .left-menu p {
     font-family: "Fira Sans";
@@ -405,7 +412,7 @@
     width: 100px;
   }
   .left-menu h1 {
-    font-size: 85px;
+    font-size: 80px;
     line-height: 1;
     margin-top: 10px;
   }
@@ -413,19 +420,33 @@
     margin-top: 5px;
   }
   .left-menu p {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 5px;
+    padding-right: 30px;
   }
   .chat-container {
     margin-top: 50px;
   }
   .header {
     font-size: 17px;
+    margin: 10px 0;
   }
 }
 
 @media all and (max-width: 572px) {
-  .gift-card {
+  .gift {
     width: 90%;
+  }
+  .chat-container {
+    padding: 15px;
+  }
+  .gift {
+    margin-left: 10px;
+  }
+  .message-text {
+    margin-left: 10px;
+  }
+  .user-message-text {
+    margin-right: 10px;
   }
 }
