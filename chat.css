@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.chat-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      252.36deg,
+      #fff1e6 100%,
+      #fde2e4 100%,
+      #fff1e6 100%
+    ),
+    url(ასდასდ.jpg), #003f58;
+}
+.left-menu {
+  width: 550px;
+  min-height: 100vh;
+  background-color: #e2ece9;
+}
+
+.left-menu h1 {
+  font-family: "Gilroy GEO HEAVY";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 127px;
+  /* identical to box height */
+  color: #fd6f34;
+  margin-left: 20px;
+}
+.left-menu p {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: #474747;
+  margin-left: 20px;
+}
+.header {
+  width: 90%;
+  border-radius: 0 49px 49px 0;
+  background: #f1f8f6;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.menu-list {
+  width: 416px;
+  margin-left: 20px;
+  justify-content: center;
+}
+.menu-list li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 17px 0;
+  border-bottom: 1px solid #ffffff;
+}
+.menu-list li p {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #000000;
+  margin-left: 25px;
+}
+.icon-cont {
+  width: 61px;
+  height: 61px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
