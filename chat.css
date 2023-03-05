@@ -236,6 +236,7 @@
   flex-direction: column;
   padding: 20px 27px;
   border-radius: 20px;
+  margin-top: 10px;
 }
 .gift-card img {
   border-radius: 19px;
@@ -276,6 +277,38 @@
 .btns p span {
   color: #5c5c5c;
   font-weight: 700;
+}
+.load-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.load-more {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background: #bee1e6;
+  border-radius: 10px;
+  padding: 10px 17px;
+  border: 0;
+  outline: 0;
+}
+.reset {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  background: #ededed;
+  border-radius: 10px;
+  padding: 10px 17px;
+  border: 0;
+  outline: 0;
+  margin-left: 28px;
 }
 @media all and (max-width: 986px) {
   .left-menu {
